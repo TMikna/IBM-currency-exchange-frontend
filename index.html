@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Bootstrap web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+<body onload="onLoad()">
+	<nav class="navbar navbar-expand-md">
+		<a class="navbar-brand" href="#"></a>
+	</nav>
+
+	<header class="row">
+		<div class="description">
+		</div>
+	</header>
+
+	<div class="container features">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Currency:</h3>
+				<h3 class="feature-title">EUR</h3>
+				<input id="eurInputID" type="text" oninput="convertToForeign()" pattern="/^\d*\.?\d*$/" name="eurInput">
+				
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h5>Welcome to a simple currency exchange application!</h5>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">	
+				<h3 class="feature-title">Currency:</h3>
+				<select name="currencySelector" id="currencies" oninput="changeCurencyType()">
+					<!-- <OPTION value="s">Special</OPTION> -->
+				</select>				
+
+				<!-- <button type="button" onclick="setforeignValue()">Insert option</button> -->
+
+				</br></br>
+				<input id="foreignInputID" type="text" oninput="convertToEur()" name="foreignInput">
+			</div>
+		</div> 
+	</div>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
